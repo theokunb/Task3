@@ -9,13 +9,15 @@ public class ItemsObserver : MonoBehaviour
 
     public IEnumerable<ItemTemplate> GetSelected()
     {
-        _items = GetComponentsInChildren<ItemTemplate>().ToList();
+        FindItems();
 
         return _items.Where(element => element.IsSelected == true);
     }
 
     public void SetItemsStatus(bool status)
     {
+        FindItems();
+
         foreach (var item in _items)
         {
             item.Select(status);
@@ -23,6 +25,11 @@ public class ItemsObserver : MonoBehaviour
     }
 
     private void Start()
+    {
+        FindItems();
+    }
+
+    private void FindItems()
     {
         _items = GetComponentsInChildren<ItemTemplate>().ToList();
     }
