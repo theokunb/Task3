@@ -505,7 +505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 23.234993, y: 0.00000025648}
+  m_AnchoredPosition: {x: 23.234985, y: 0.00000025648}
   m_SizeDelta: {x: 46.47, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745425961
@@ -1361,7 +1361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -92.4, y: -45.399994}
+  m_AnchoredPosition: {x: -92.399994, y: -45.399994}
   m_SizeDelta: {x: 40.522, y: 32.735}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054976023
@@ -2331,9 +2331,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -280.99997, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.27, y: 0.5}
+  m_AnchoredPosition: {x: -256, y: 0}
+  m_SizeDelta: {x: -518, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1806359079
 GameObject:
@@ -2971,7 +2971,6 @@ GameObject:
   - component: {fileID: 1972116823}
   - component: {fileID: 1972116825}
   - component: {fileID: 1972116824}
-  - component: {fileID: 1972116826}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3046,26 +3045,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972116822}
   m_CullTransparentMesh: 1
---- !u!95 &1972116826
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972116822}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a9fc9dcbf9c85e640b9f7857115b5380, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2048424162
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,4 +3199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b037191136f6b884e8dc30162e4c2929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 1972116826}
+  _target: {fileID: 1972116822}
+  _hidePlace: {fileID: 1628858126}
+  _moveSpeed: 40
